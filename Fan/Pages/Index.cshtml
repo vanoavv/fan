@@ -1,0 +1,20 @@
+﻿@page
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<section class="row">
+    <div class="col-md-12 col-xs-12">
+        <h2>Fan settings</h2>
+
+        Speed - <span id="speed"></span> <br /><br />
+        Direction - <span id="direction"></span><br /><br />
+        <p>Use the buttons to change fan speed and direction </p>
+        <button id="speedButton" role="button" draggable="false" class="btn-lg btn-default ns-link-button">
+            Speed Up
+        </button>
+        <button id="reverseButton" role="button" draggable="false" class="btn-lg ns-btn-2nd ns-link-button">
+            Reverse
+        </button>
+    </div>
+</section>

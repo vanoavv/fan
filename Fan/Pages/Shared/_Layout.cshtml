@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+@*    <title>@ViewData["Title"] - Fan</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Fan.styles.css" asp-append-version="true" />
+    *@
+    <script src="~/lib/jquery/dist/jquery.min.js" type="text/javascript"></script>
+    <script src="~/js/site.js" type="text/javascript"></script>
+    <link rel="stylesheet" media="all" href="~/css/supplimentary-page-styles.css" asp-append-version="true"/>
+    <link rel="stylesheet" media="all" href="~/css/saltire.css" asp-append-version="true"/>
+    <link rel="stylesheet" media="all" href="~/css/buttons.css" asp-append-version="true"/>
+    <link rel="stylesheet" media="all" href="~/css/phase-banner.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="Site js-enabled" id="container">
+        <header>
+            <!-- START SALTIRE NS MOTHERSHIP RIBBON w FR -->
+            <nav id="navigation" class="ribbon" role="navigation" aria-label="Main navigation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <a href="https://novascotia.ca/" hreflang="en"><img class="ribbon-img" src="https://novascotia.ca/clf/ignition/img/nsvip-en-white-flag.svg" alt="Province of Nova Scotia"></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- END SALTIRE NS MOTHERSHIP RIBBON w FR -->
+        </header>
+        <div class="ns-phase-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <p class="ns-phase-banner__content">
+                            <strong class="ns-tag ns-phase-banner__content__tag">
+                                Beta
+                            </strong>
+                            <span class="ns-phase-banner__text">
+                                This is a new service that we're still developing. Try the service and <a href="https://github.com/connorscarolyns/service-pattern-library/issues">send us your comments and suggestions</a>. Your feedback will help make the service easier to use for everyone.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container Site-content">
+            @RenderBody()
+        </div>
+        <footer id="footer" class="footer" role="contentinfo">
+            <div class="container">
+            </div>
+        </footer>
+    </div>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
